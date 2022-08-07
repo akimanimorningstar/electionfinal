@@ -69,9 +69,9 @@ return <Card.Group items={items}/>
 render(){
     return (
         <Layout>
-            <div><h2>Check the Results in the Blockchain <Link route='https://alfajores-blockscout.celo-testnet.org/address/0x9cCA1206190Bf931B4C333f29218dc2B1132A50e/transactions'>
+            <div><h2>Check the Results in the Blockchain <Link route='https://explorer.celo.org/address/0x073f019b17C00993F161BeF7E43a5E575775695b/read-contract'>
                 <a>
-                0x9cCA1206190Bf931B4C333f29218dc2B1132A50e
+                0x073f019b17C00993F161BeF7E43a5E575775695b
                 </a>
             </Link></h2>
             </div>

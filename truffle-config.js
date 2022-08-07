@@ -10,11 +10,11 @@ module.exports = {
       port: 8545,
       network_id: "*"
     },
-    rinkbey: {
+    mainet : {
       provider: function() {
         return new HDWalletProvider(MNEMONIC, API_URL)
       },
-      network_id:44787,
+      network_id:42220,
       gas: 4000000      //make sure this gas allocation isn't over 4M, which is the max
     }
   },
