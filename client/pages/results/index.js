@@ -44,15 +44,13 @@ render(){
                     <Row>
                         <HeaderCell>Verifier List</HeaderCell>
                         <HeaderCell>Voter Address </HeaderCell>
+                        <HeaderCell>State </HeaderCell>
                         <HeaderCell>County</HeaderCell>
-                        <HeaderCell>Constituency</HeaderCell>
-                        <HeaderCell>Ward </HeaderCell>
+                        <HeaderCell>City </HeaderCell>
                         <HeaderCell>Polling Station Name</HeaderCell>
                         <HeaderCell>Polling ID</HeaderCell>
-                        <HeaderCell>William Samoei Ruto </HeaderCell>
-                        <HeaderCell>Raila Amollo Odinga </HeaderCell>
-                        <HeaderCell>Prof George Wajacoyah</HeaderCell>
-                        <HeaderCell>David Waihiga Mwaure</HeaderCell>
+                        <HeaderCell> Joe Biden </HeaderCell>
+                        <HeaderCell> Donald J. Trump </HeaderCell>
                     </Row>
                 </Header>
             <Body>

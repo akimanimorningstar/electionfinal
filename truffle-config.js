@@ -10,6 +10,13 @@ module.exports = {
       port: 8545,
       network_id: "*"
     },
+    alfajores: {
+      provider: function() {
+        return new HDWalletProvider(MNEMONIC, API_URL)
+      },
+      network_id: 44787,
+      gas: 20000000
+    },
     mainet : {
       provider: function() {
         return new HDWalletProvider(MNEMONIC, API_URL)

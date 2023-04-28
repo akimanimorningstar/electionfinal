@@ -10,22 +10,20 @@ class SubmitIndex extends Component{
 
 
     state = {
+    state : '',
     county : '',
-    constituency : '',
-    ward : '',
+    city : '',
     pollingId : '',
     pollingName : '',
     cand1 : '',
     cand2 : '',
-    cand3 : '',
-    cand4 : '',
     }
 
     onSubmit = async ()=> {
 
         event.preventDefault();
           this.setState({loading: true, errorMessage:''});
-          const {county, constituency, ward, pollingId, pollingName, cand1, cand2,cand3, cand4 } = this.state;
+          const {county, constituency, ward, pollingId, pollingName, cand1, cand2 } = this.state;
           try
           {
             const contract = await getContract(web3, contractDefinition);
@@ -33,7 +31,7 @@ class SubmitIndex extends Component{
             await contract.methods.createRequest(county , constituency,
                 ward , pollingName,
                 pollingId, cand1,
-                cand2, cand3, cand4).
+                cand2).
             send({ from : accounts[0]});
           }
           catch(err){
@@ -46,24 +44,24 @@ render (){
             <h3>Submit Your Polling Station results here </h3>
             <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
             <Form.Field>
-            <label>County  </label>
+            <label> State  </label>
+            <Input
+              value ={this.state.state}
+              onChange={event => this.setState({state: event.target.value })}
+            />
+             </Form.Field>
+             <Form.Field>
+            <label>County</label>
             <Input
               value ={this.state.county}
               onChange={event => this.setState({county: event.target.value })}
             />
              </Form.Field>
              <Form.Field>
-            <label>Constituency</label>
+            <label>City </label>
             <Input
-              value ={this.state.constituency}
-              onChange={event => this.setState({constituency: event.target.value })}
-            />
-             </Form.Field>
-             <Form.Field>
-            <label>Ward </label>
-            <Input
-              value ={this.state.ward}
-              onChange={event => this.setState({ward: event.target.value })}
+              value ={this.state.city}
+              onChange={event => this.setState({city: event.target.value })}
             />
              </Form.Field>
              <Form.Field>
@@ -81,31 +79,17 @@ render (){
             />
              </Form.Field>
              <Form.Field>
-            <label>Wiliam Samoei Ruto </label>
+            <label> Joe Biden  </label>
             <Input
               value ={this.state.cand1}
               onChange={event => this.setState({cand1: event.target.value })}
             />
              </Form.Field>
              <Form.Field>
-            <label>Raila Amollo Odinga</label>
+            <label>Donald J. Trump</label>
             <Input
               value ={this.state.cand2}
               onChange={event => this.setState({cand2: event.target.value })}
-            />
-             </Form.Field>
-             <Form.Field>
-            <label> Prof George Wajacoyah </label>
-            <Input
-              value ={this.state.cand3}
-              onChange={event => this.setState({cand3: event.target.value })}
-            />
-             </Form.Field>
-             <Form.Field>
-            <label> David Waihiga Mwaure</label>
-            <Input
-              value ={this.state.cand4}
-              onChange={event => this.setState({cand4: event.target.value })}
             />
              </Form.Field>
                 <Message error header='Oops' content ={this.state.errorMessage}/>
