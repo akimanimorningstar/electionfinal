@@ -54,7 +54,7 @@ return <Card.Group items={items}/>
 render(){
     return (
         <Layout>
-            <div><h2>Check the Results in the Blockchain <Link route='https://explorer.celo.org/address/0xd9a59477C7AD8D55A8fCb58a6225DbBcBBFE4D4F/read-contract'>
+            <div><h2>Check the Results in the Blockchain <Link route='https://explorer.celo.org/alfajores/address/0xd9a59477C7AD8D55A8fCb58a6225DbBcBBFE4D4F/transactions#address-tabs'>
                 <a>
                 0xd9a59477C7AD8D55A8fCb58a6225DbBcBBFE4D4F
                 </a>
