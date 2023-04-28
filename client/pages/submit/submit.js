@@ -16,21 +16,20 @@ class SubmitIndex extends Component{
     pollingId : '',
     pollingName : '',
     cand1 : '',
-    cand2 : '',
+    cand2 : ''
     }
 
     onSubmit = async ()=> {
 
         event.preventDefault();
           this.setState({loading: true, errorMessage:''});
-          const {county, constituency, ward, pollingId, pollingName, cand1, cand2 } = this.state;
+          const {state, county, city, pollingId, pollingName, cand1, cand2 } = this.state;
           try
           {
             const contract = await getContract(web3, contractDefinition);
             const accounts = await web3.eth.getAccounts();
-            await contract.methods.createRequest(county , constituency,
-                ward , pollingName,
-                pollingId, cand1,
+            await contract.methods.createRequest(state, county,
+                city ,pollingId,pollingName, cand1,
                 cand2).
             send({ from : accounts[0]});
           }
