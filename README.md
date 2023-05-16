@@ -53,6 +53,8 @@ In the client folder run the following command to start the app
 3. Submit the results to the blockchain - use your metamask wallet to submit the result.
 4. Results are securely stored and tallied - check the raw results and compare to the final tallied result on the homepage.
 
+Link to live website - https://rapid-haze-7992.on.fleek.co/
+
 ## Support.
 
 If you encounter any issues while using this system, please feel free to contact me  via email or Discord . I will be more than happy to help you.
