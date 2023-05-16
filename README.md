@@ -46,7 +46,7 @@ In the client folder run the following command to start the app
  
     NB - The base folder should be client when deploying.
 
-##Usage
+## Usage.
                                                           
 1. Confrim that your contract address is on the celo bllockchain.
 2. Enter the election results - via the submit page.
