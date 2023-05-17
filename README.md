@@ -19,7 +19,7 @@ This system provides a secure, transparent, and accurate way to tally election r
  
 2. Install the necessary packages.
 
-Enter into the electionfinal folder - CD electionfinal 
+_Enter into the electionfinal folder - CD electionfinal_
 
 -   Install truffle - npm install -g truffle
 
@@ -27,18 +27,18 @@ Enter into the electionfinal folder - CD electionfinal
 
 -   Install truffle hd wallet provider -   npm install @truffle/hdwallet-provider
 
-If you wish to deploy your own smart contract for testing purposes.Run the following three commands 
+_If you wish to deploy your own smart contract for testing purposes.Run the following three commands_
    - truffle compile. 
    - truffle migrate.
    - truffle deploy --network alfajores --reset
 
-Enter into the client folder  -  cd client 
+_Enter into the client folder  -  cd client 
 
 Run the following command -  npm install next next-routes web3 semanti-ui-react semantic-ui-css --f
 
 3. Run the setup script.
 
-In the client folder run the following command to start the app 
+_In the client folder run the following command to start the app_
 
   - npm run dev.
  
@@ -53,11 +53,11 @@ In the client folder run the following command to start the app
 3. Submit the results to the blockchain - use your metamask wallet to submit the result.
 4. Results are securely stored and tallied - check the raw results and compare to the final tallied result on the homepage.
 
-Link to live website - https://rapid-haze-7992.on.fleek.co/
+_Link to live website - https://rapid-haze-7992.on.fleek.co/
 
 ## Support.
 
-If you encounter any issues while using this system, please feel free to contact me  via email or Discord . I will be more than happy to help you.
+_If you encounter any issues while using this system, please feel free to contact me  via email or Discord . I will be more than happy to help you.
 
 Email - Antonyk139@gmail.com
 
