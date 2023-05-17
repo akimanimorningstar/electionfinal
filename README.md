@@ -32,7 +32,7 @@ _If you wish to deploy your own smart contract for testing purposes.Run the foll
    - truffle migrate.
    - truffle deploy --network alfajores --reset
 
-_Enter into the client folder  -  cd client 
+_Enter into the client folder  -  cd client_ 
 
 Run the following command -  npm install next next-routes web3 semanti-ui-react semantic-ui-css --f
 
