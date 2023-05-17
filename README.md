@@ -48,16 +48,16 @@ _In the client folder run the following command to start the app_
 
 ## Usage.
                                                           
-1. Confrim that your contract address is on the celo bllockchain.
+1. Confrim that your contract address is on the celo blockchain.
 2. Enter the election results - via the submit page.
 3. Submit the results to the blockchain - use your metamask wallet to submit the result.
 4. Results are securely stored and tallied - check the raw results and compare to the final tallied result on the homepage.
 
-_Link to live website - https://rapid-haze-7992.on.fleek.co/
+_Link to live website - https://rapid-haze-7992.on.fleek.co/_
 
 ## Support.
 
-_If you encounter any issues while using this system, please feel free to contact me  via email or Discord . I will be more than happy to help you.
+_If you encounter any issues while using this system, please feel free to contact me  via email or Discord . I will be more than happy to help you._
 
 Email - Antonyk139@gmail.com
 
